@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    
+</head>
+<body>
+   <h1>Введіть ваше рівняння:</h1>
+    <form>
+        <label><input type="text" id="a" name="koef-a"> x^2 +</label>
+        <label><input type="text" id ="b" name="koef-b"> x +</label>
+        <label><input type="text" id ="c" name="koef-c"> = 0 ;</label>
+        <br><br>
+        <input type="button" value="Розв'язати" onClick="quadratEquation()">
+    </form>
+    <div id="result"></div>
+   <script type="text/javascript" src="js/index.js"></script> 
+</body>
+</html>

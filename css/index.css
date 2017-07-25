@@ -1,0 +1,13 @@
+body{
+    margin: 0 auto;
+    text-align: center;
+}
+h1{
+    font-style: italic;
+}
+#a,#b,#c{
+    width: 2%;
+}
+#result{
+    margin-top: 20px;
+}
