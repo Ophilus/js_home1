@@ -1,7 +1,7 @@
 
 let D;
 let x1,x2;
-let a,b,c;
+let a=1,b=1,c=0;
 function discr(){
     D = Math.pow(b,2) - 4 * a * c ;
     return D;
@@ -20,9 +20,13 @@ function findRoot(){
 }
 function quadratEquation(){
     document.getElementById('result').innerHTML='';
-    a = document.getElementById('a').value;
-    b = document.getElementById('b').value;
-    c = document.getElementById('c').value;
+    a =parseFloat(document.getElementById('a').value);
+    b = parseFloat(document.getElementById('b').value);
+    c =parseFloat( document.getElementById('c').value);
+    if(isNaN(a) || isNaN(b) || isNaN(c) ){
+         document.getElementById('result').innerHTML='Введіть коректні значення коефіцієнтів!!!';
+    }else{
     discr();
     findRoot();
+    }
 }
