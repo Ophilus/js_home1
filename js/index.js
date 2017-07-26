@@ -1,7 +1,5 @@
+let a, b, c, D, x1, x2;
 
-let D;
-let x1,x2;
-let a=1,b=1,c=0;
 function discr(){
     D = Math.pow(b,2) - 4 * a * c ;
     return D;
